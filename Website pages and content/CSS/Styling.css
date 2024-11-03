@@ -1,0 +1,134 @@
+body {
+    background-color: #808880; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    font-size: 1rem; /* Base font size */
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #5A615A;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #F0F0F0;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+/* Main Content */
+.home-content img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.home-content p {
+    font-size: 1.125rem;
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #E0E0E0;
+}
+
+/* Flexbox Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column {
+    flex: 1 1 30%;
+    padding: 15px;
+}
+
+.row img {
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #5A615A; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .home-content img {
+        width: 80%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
